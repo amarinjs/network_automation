@@ -17,7 +17,7 @@ One note: the numbers below are real, but I stripped out anything that could poi
 
 ---
 
-## 🗄️ Repository structure
+## ⛓️ Repository structure
 
 ```
 network-automation-toolkit/
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 
 The Python scripts come with a sample inventory.yaml. Swap in your own devices and use `--dry-run` where it's available. Running the NetBrain Intents needs a NetBrain instance, but each one is written up well enough that you can rebuild the same logic in whatever tool you use.
 
-⚠️ **Test in a lab first, or use dry-run, before you touch production.**
+🩸 **Test in a lab first, or use dry-run, before you touch production.**
 
 ---
 
