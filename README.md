@@ -36,7 +36,7 @@ network-automation-toolkit/
 
 ---
 
-## ⚗️ How we tackle config compliance
+## ⚗️ config compliance
 
 Most of the compliance checks in here work the same way. Check the device against a golden baseline, figure out exactly what's wrong, and fix only that. Every fix comes with a rollback built in, so nothing gets pushed without a way back out. Here's the pattern, using our NTP access list check as the example:
 
@@ -61,7 +61,7 @@ We run CIS benchmark checks across multiple vendors (Cisco, Palo Alto, Fortinet,
 
 ---
 
-## ⚔️ Use cases (real stuff, real results)
+## ⚔️ Use cases from the field
 
 ### Config Compliance
 | Automation | What it does | Typical impact |
