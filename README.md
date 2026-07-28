@@ -63,40 +63,9 @@ We run CIS benchmark checks across multiple vendors (Cisco, Palo Alto, Fortinet,
 
 ## ⚔️ Use cases from the field
 
-### Config Compliance
-| Automation | What it does | Typical impact |
-|---|---|---|
-| WiFi AP Switchport Compliance | Correlates CDP neighbor data against expected AP switchport config | ~90% time reduction vs. manual audit |
-| Flexible Config Assessment | Searches for any arbitrary config line across the fleet and proposes remediation | No prior tooling equivalent |
-| DHCP Helper Compliance | Verifies correct IP-helper config on every L3 interface | ~90% time reduction |
-| NTP FQDN Standardization | Rolls out a single FQDN-based NTP standard fleet-wide | ~98% time reduction |
-| NetFlow Config Standardization | Strips stale config and standardizes NetFlow fleet-wide | ~87% time reduction |
-| Startup/Running Config Mismatch | Flags devices where a config save was likely forgotten | Weekly automatic check |
+Everything in this repo started as a real problem on a real network: config compliance, security hardening, routing and switching checks, device health, bulk troubleshooting. On average these automations cut manual work by around 90%, which usually works out to hundreds, sometimes thousands, of hours saved depending on how big the environment is.
 
-### Security Audits
-| Automation | What it does | Typical impact |
-|---|---|---|
-| VTY Line Hardening | Detects Telnet-enabled VTY lines and remediates to SSH-only | ~92% time reduction |
-| Public IP Address Report | Builds an exportable report of every public IP on the network | ~99% time reduction |
-| Internet Edge ACL Hardening | Finds internet-facing interfaces missing an ACL | ~98% time reduction |
-| HTTP Server Detection | Flags devices with an HTTP server enabled and proposes remediation | Quarterly audit requirement |
-
-### Routing & Switching Health
-| Automation | What it does | Typical impact |
-|---|---|---|
-| BGP/OSPF Flap Detection | Detects routing adjacency flaps daily | Visibility not available off the shelf |
-| BYOD VRF Standardization | Confirms guest VRF routing and reachability is standardized | ~90% time reduction |
-| BYOD VLAN Standardization | Ensures guest VLAN config is consistent fleet-wide | ~89% time reduction |
-| EtherChannel Inactive Members | Flags inactive members inside port-channels | ~89% time reduction |
-| Switch-to-Switch Trunk Standardization | Confirms neighboring switches trunk correctly to each other | ~89% time reduction |
-| Trunk Allowed-VLANs Standardization | Standardizes allowed VLANs on trunks between neighbors | On-demand check |
-| STP Mode & Root Bridge Detection | Detects spanning-tree mode and root bridge placement | No prior alternative in existing toolset |
-
-### Device Health & Troubleshooting
-| Automation | What it does | Typical impact |
-|---|---|---|
-| Device Uptime Report | Reports and alerts on devices with short/recent uptime | Early warning for flapping hardware |
-| Bulk CLI Retrieval | Pulls arbitrary CLI output from any number of devices on demand | Major accelerator for TAC case resolution |
+Full write-ups for each one, with the actual before/after numbers, will live in their own folders as they get added to the repo.
 
 ---
 
