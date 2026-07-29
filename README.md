@@ -103,4 +103,4 @@ MIT, see [LICENSE](LICENSE). Use it, fork it, change it, sell it if you want.
 
 ## 🦇 Connect
 
-Open an issue or find me on [LinkedIn](#) if you want to compare notes.
+Open an issue or find me on [LinkedIn](https://www.linkedin.com/in/amarin2048/) if you want to compare notes.
