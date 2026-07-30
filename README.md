@@ -21,16 +21,19 @@ One note: the numbers below are real, but I stripped out anything that could poi
 
 ```
 network-automation-toolkit/
-├── config-backup/             # Multi-vendor config backup and versioning
-├── config-standards/          # Company config standards turned into reusable checks
-├── compliance-audit/          # Config and security checks against a baseline
-├── bulk-config-deployment/    # Pushing config changes at scale, with validation
-├── network-discovery/         # Auto inventory and topology mapping
-├── auto-remediation/          # Scripts and flows that fix things automatically
-├── golden-config-remediation/ # The match/fix/rollback pattern explained below
-├── cis-benchmark-dashboards/  # Multi-vendor CIS scoring, dashboards that update on their own
-├── reporting-dashboards/      # Capacity, health, and change reporting
-├── shared/                    # Common helpers used across the scripts
+├── digital-twin/            # Live modeled view of the network, for testing changes safely
+├── standards/                # Golden config definitions and baselines
+├── compliance-audit/         # CIS, NIST, and other framework-based checks
+├── bulk-config-deployment/   # Pushing config changes at scale, with validation
+├── routing/
+├── switching/
+├── device-health/
+├── network-services/         # DHCP, NTP, DNS, NetFlow, and similar
+├── reporting/
+├── config-drift/
+├── backup-versioning/        # Scheduled config backups with version history
+├── discovery/                 # Inventory and topology mapping, feeds the digital twin
+├── shared/                    # Common helpers used across the toolkit
 └── requirements.txt
 ```
 
