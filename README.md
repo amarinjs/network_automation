@@ -49,7 +49,7 @@ flowchart TD
     B -->|Exact match| C["No action<br/>Leave device as-is"]
     B -->|ACL missing| D["Apply ACL<br/>Create ACL + ACEs"]
     B -->|Misconfigured| E["Delete + reapply<br/>Rebuild whole ACL"]
-    C --> F(["$change variable<br/>Written for CM push"])
+    C --> F(["$change plan variable<br/> Ready to push to devices"])
     D --> F
     E --> F
 ```
