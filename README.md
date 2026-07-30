@@ -21,19 +21,19 @@ One note: the numbers below are real, but I stripped out anything that could poi
 
 ```
 network-automation-toolkit/
-├── digital-twin/            # Live modeled view of the network, for testing changes safely
-├── standards/                # Golden config definitions and baselines
-├── compliance-audit/         # CIS, NIST, and other framework-based checks
-├── bulk-config-deployment/   # Pushing config changes at scale, with validation
-├── routing/
-├── switching/
-├── device-health/
+├── discovery/                # Maps inventory and topology
+├── digital-twin/             # Models the network for safe change testing
+├── standards/                # Defines golden config baselines
+├── compliance-audit/         # Runs CIS, NIST, and other framework checks
+├── config-drift/             # Flags drift from the baseline
+├── bulk-config-deployment/   # Pushes config changes at scale, with validation
+├── backup-versioning/        # Backs up configs with version history
+├── routing/                  # BGP, OSPF, and other routing checks
+├── switching/                # VLANs, trunks, STP, and other switching checks
+├── device-health/            # Uptime, reload reasons, and hardware health
 ├── network-services/         # DHCP, NTP, DNS, NetFlow, and similar
-├── reporting/
-├── config-drift/
-├── backup-versioning/        # Scheduled config backups with version history
-├── discovery/                 # Inventory and topology mapping, feeds the digital twin
-├── shared/                    # Common helpers used across the toolkit
+├── reporting/                # Dashboards and reports pulled from everything above
+├── shared/                   # Common helpers used across the toolkit
 └── requirements.txt
 ```
 
