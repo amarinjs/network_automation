@@ -39,9 +39,9 @@ network-automation-toolkit/
 
 ---
 
-## 🎯 Real Use Case, Quantified Savings
+## 🦅 Use cases from the field
 
-This isn't a lab exercise. Every line below comes from work done on a live production network, and the same pattern repeats across every engagement I run: automate the check, cut the manual effort by 85–99%, and let it run on a schedule instead of a person's calendar.
+The lines below come from work done on a live production networks, over engagements with real requirements, and the same pattern repeats across every engagement I run: automate the check, cut the manual effort by 85–99%, and let it run on a schedule instead of a person's calendar.
 
 At this scale, the savings land in the hundreds of thousands of dollars a year per engagement, and millions over the life of a program.
 
