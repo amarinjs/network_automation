@@ -49,14 +49,14 @@ At this scale, the savings land in the hundreds of thousands of dollars a year p
 |---|---|---|---|---|---|---|
 | Public IP Address Report | Captures every public IP, interface, and device into one exportable report | Security Audit | 80 hrs (10 days) | 30 min | 🟢 ~99.6% | Monthly |
 | DHCP Snooping Standardization | Configures trunk trust commands, enables snooping, and hardens access ports fleet-wide | Config Compliance | 274 hrs (34 days) | 1 hr | 🟢 99% | On Demand |
-| NTP FQDN Standardization | Rolls out a single FQDN-based NTP standard to every device | Config Compliance | 212 hrs (26 days) | 4 hrs | 🟢 98% | Monthly |
-| Internet Edge ACL Hardening | Finds internet-facing interfaces with no ACL configured | Security Audit | 176 hrs (22 days) | 3 hrs | 🟢 98% | Monthly |
+| NTP FQDN Standardization | Rolls out a single FQDN-based NTP standard to every device, removes legacy ntp entries | Config Compliance | 212 hrs (26 days) | 4 hrs | 🟢 98% | Monthly |
+| Internet Edge ACL Hardening | Finds internet-facing interfaces with no ACL configured, applies the ACL where needed | Security Audit | 176 hrs (22 days) | 3 hrs | 🟢 98% | Monthly |
 | VTY Line Hardening | Detects Telnet-enabled lines and remediates them to SSH-only | Security Audit | 160 hrs (20 days) | 12 hrs | 🟢 92% | Bi-Weekly |
-| WiFi AP Switchport Compliance | Cross-checks CDP neighbor data against expected AP switchport config | Config Compliance | 160 hrs (20 days) | 16 hrs | 🟡 90% | Weekly |
-| DHCP Helper Compliance | Flags routers missing the standard IP-helper config for DHCP | Config Compliance | 104 hrs (13 days) | 10 hrs | 🟡 90% | Monthly |
-| BYOD VRF Standardization | Confirms every router reaches the internet and internal network through the right VRF, with the correct routes in place | Routing | 104 hrs (13 days) | 10 hrs | 🟡 90% | Weekly |
+| WiFi AP Switchport Compliance | Cross-checks CDP neighbor data against expected AP switchport config and configures the description accordingly | Config Compliance | 160 hrs (20 days) | 16 hrs | 🟡 90% | Weekly |
+| DHCP Helper Compliance | Flags routers missing the standard IP-helper config for DHCP, and implements the missing items | Config Compliance | 104 hrs (13 days) | 10 hrs | 🟡 90% | Monthly |
+| BYOD VRF Standardization | Confirms every router reaches the internet and internal network through the right VRF, with the correct routes in place and reachability tests | Routing | 104 hrs (13 days) | 10 hrs | 🟡 90% | Weekly |
 | Guest VLAN Standardization | Confirms the guest VLAN is present and consistent across campus and office switches | Switching | 144 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
-| Startup/Running Config Mismatch | Flags devices where the running config is newer than the last saved startup config | Config Compliance | 145 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
+| Startup/Running Config Mismatch | Flags devices where the running config is different from the last saved startup config | Config Compliance | 145 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
 | EtherChannel Inactive Members | Flags inactive members sitting inside switch port-channels | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
 | Switch-to-Switch Trunk Standardization | Confirms neighboring switches are trunking correctly to each other | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
 | Trunk Allowed-VLANs Standardization | Standardizes which VLANs are allowed across trunks between neighbors | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | On Demand |
