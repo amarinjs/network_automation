@@ -45,26 +45,36 @@ This isn't a lab exercise. Every line below comes from work done on a live produ
 
 At this scale, the savings land in the hundreds of thousands of dollars a year per engagement, and millions over the life of a program.
 
-| Automation | Category | Manual Effort | Automated Effort | Time Reduction | Frequency |
-|---|---|---|---|---|---|
-| Public IP Address Report | Security Audit | 80 hrs (10 days) | 30 min | 🟢 ~99.6% | Monthly |
-| DHCP Snooping Standardization | Config Compliance | 274 hrs (34 days) | 1 hr | 🟢 99% | On Demand |
-| NTP FQDN Standardization | Config Compliance | 212 hrs (26 days) | 4 hrs | 🟢 98% | Monthly |
-| Internet Edge ACL Hardening | Security Audit | 176 hrs (22 days) | 3 hrs | 🟢 98% | Monthly |
-| VTY Line Hardening | Security Audit | 160 hrs (20 days) | 12 hrs | 🟢 92% | Bi-Weekly |
-| WiFi AP Switchport Compliance | Config Compliance | 160 hrs (20 days) | 16 hrs | 🟡 90% | Weekly |
-| DHCP Helper Compliance | Config Compliance | 104 hrs (13 days) | 10 hrs | 🟡 90% | Monthly |
-| BYOD VRF Standardization | Routing | 104 hrs (13 days) | 10 hrs | 🟡 90% | Weekly |
-| Guest VLAN Standardization | Switching | 144 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
-| Startup/Running Config Mismatch | Config Compliance | 145 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
-| EtherChannel Inactive Members | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
-| Switch-to-Switch Trunk Standardization | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
-| Trunk Allowed-VLANs Standardization | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | On Demand |
-| NetFlow Config Standardization | Config Compliance | 80 hrs (10 days) | 10 hrs | 🟡 87% | Weekly |
+| Automation | Description | Category | Manual Effort | Automated Effort | Time Reduction | Frequency |
+|---|---|---|---|---|---|---|
+| Public IP Address Report | Captures every public IP, interface, and device into one exportable report | Security Audit | 80 hrs (10 days) | 30 min | 🟢 ~99.6% | Monthly |
+| DHCP Snooping Standardization | Configures trunk trust commands, enables snooping, and hardens access ports fleet-wide | Config Compliance | 274 hrs (34 days) | 1 hr | 🟢 99% | On Demand |
+| NTP FQDN Standardization | Rolls out a single FQDN-based NTP standard to every device | Config Compliance | 212 hrs (26 days) | 4 hrs | 🟢 98% | Monthly |
+| Internet Edge ACL Hardening | Finds internet-facing interfaces with no ACL configured | Security Audit | 176 hrs (22 days) | 3 hrs | 🟢 98% | Monthly |
+| VTY Line Hardening | Detects Telnet-enabled lines and remediates them to SSH-only | Security Audit | 160 hrs (20 days) | 12 hrs | 🟢 92% | Bi-Weekly |
+| WiFi AP Switchport Compliance | Cross-checks CDP neighbor data against expected AP switchport config | Config Compliance | 160 hrs (20 days) | 16 hrs | 🟡 90% | Weekly |
+| DHCP Helper Compliance | Flags routers missing the standard IP-helper config for DHCP | Config Compliance | 104 hrs (13 days) | 10 hrs | 🟡 90% | Monthly |
+| BYOD VRF Standardization | Confirms every router reaches the internet and internal network through the right VRF, with the correct routes in place | Routing | 104 hrs (13 days) | 10 hrs | 🟡 90% | Weekly |
+| Guest VLAN Standardization | Confirms the guest VLAN is present and consistent across campus and office switches | Switching | 144 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
+| Startup/Running Config Mismatch | Flags devices where the running config is newer than the last saved startup config | Config Compliance | 145 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
+| EtherChannel Inactive Members | Flags inactive members sitting inside switch port-channels | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
+| Switch-to-Switch Trunk Standardization | Confirms neighboring switches are trunking correctly to each other | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
+| Trunk Allowed-VLANs Standardization | Standardizes which VLANs are allowed across trunks between neighbors | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | On Demand |
+| NetFlow Config Standardization | Strips stale config and rolls out a consistent NetFlow standard | Config Compliance | 80 hrs (10 days) | 10 hrs | 🟡 87% | Weekly |
 
-**Also live, with no manual baseline to compare against:** device uptime and reload reporting, BGP/OSPF neighbor flap detection, flexible config assessment, STP mode and root bridge detection, and bulk CLI retrieval. There was no way to do these by hand before, so they show up as pure gain.
+**Also live, with no manual baseline to compare against:**
 
-Just the rows above reclaim roughly **10,400 hours a year** on one engagement, plus another **1,400 hours** saved during setup and migration. Run that across dozens of networks over a few years and the number stops being hundreds of thousands and turns into millions.
+| Automation | Description | Category | Frequency |
+|---|---|---|---|
+| Device Uptime & Reload Reporting | Flags devices with short uptime and reports the last reload reason | Device Health | Daily |
+| BGP/OSPF Neighbor Flap Detection | Detects routing adjacency flaps as they happen | Routing | Daily |
+| Flexible Config Assessment | Searches for any arbitrary config line across the whole fleet on demand | Config Compliance | On Demand |
+| STP Mode & Root Bridge Detection | Detects spanning-tree mode and root bridge placement | Switching | On Demand |
+| Bulk CLI Retrieval | Pulls any CLI output from any number of devices on demand | Troubleshooting | On Demand |
+
+There was no way to do these by hand before, so they show up as pure gain.
+
+Just the rows in the main table reclaim roughly **10,400 hours a year** on one engagement, plus another **1,400 hours** saved during setup and migration. Run that across dozens of networks over a few years and the number stops being hundreds of thousands and turns into millions.
 
 ## ⚗️ config compliance
 
