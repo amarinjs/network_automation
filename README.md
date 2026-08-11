@@ -57,9 +57,9 @@ At this scale, the savings land in the hundreds of thousands of dollars a year p
 | BYOD VRF Standardization | Confirms every router reaches the internet and internal network through the right VRF, with the correct routes in place and reachability tests | Routing | 104 hrs (13 days) | 10 hrs | 🟡 90% | Weekly |
 | Guest VLAN Standardization | Confirms the guest VLAN is present and consistent across campus and office switches | Switching | 144 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
 | Startup/Running Config Mismatch | Flags devices where the running config is different from the last saved startup config | Config Compliance | 145 hrs (18 days) | 4 hrs | 🟡 89% | Weekly |
-| EtherChannel Inactive Members | Flags inactive members sitting inside switch port-channels | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
-| Switch-to-Switch Trunk Standardization | Confirms neighboring switches are trunking correctly to each other | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | Monthly |
-| Trunk Allowed-VLANs Standardization | Standardizes which VLANs are allowed across trunks between neighbors | Switching | 145 hrs (18 days) | Not yet finalized | 🟡 89% | On Demand |
+| EtherChannel Inactive Members | Flags inactive members sitting inside switch port-channels | Switching | 145 hrs (18 days) | 3 hrs | 🟡 89% | Monthly |
+| Switch-to-Switch Trunk Standardization | Confirms neighboring switches are trunking correctly to each other | Switching | 145 hrs (18 days) | 4 hrs | 🟡 89% | Monthly |
+| Trunk Allowed-VLANs Standardization | Standardizes which VLANs are allowed across trunks between neighbors | Switching | 145 hrs (18 days) | 4 hrs | 🟡 89% | On Demand |
 | NetFlow Config Standardization | Strips stale config and rolls out a consistent NetFlow standard | Config Compliance | 80 hrs (10 days) | 10 hrs | 🟡 87% | Weekly |
 
 **Also live, with no manual baseline to compare against:**
